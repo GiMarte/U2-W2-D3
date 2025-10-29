@@ -19,6 +19,7 @@
     margin-bottom: 20px;
     @include borders;
     cursor: pointer;
+    padding: 10px 20px;
     &:hover {
       animation: rotation 2s;
     }

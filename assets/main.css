@@ -145,6 +145,7 @@ table {
   border: 1px solid black;
   border-radius: 15px;
   cursor: pointer;
+  padding: 10px 20px;
 }
 #hero button:hover {
   animation: rotation 2s;
