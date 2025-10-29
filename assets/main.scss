@@ -12,6 +12,9 @@
 
 @import "./partials/animation";
 
+body {
+    background-color: $text;
+}
 #c-container {
   display: flex;
   justify-content: space-around;
@@ -23,7 +26,7 @@
 .card img {
   max-width: 100%;
   border-radius: 15px;
-
+ transition: 200ms ease-in-out;
   &:hover {
     transform: scale(0.9);
     cursor: pointer;

@@ -1,24 +1,26 @@
 @keyframes rotation {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0turn) scale(1);
   }
   25% {
-    transform: rotate(2.5turn);
+    transform: rotate(1turn) scale(1);
   }
   50% {
-    transform: rotate(4turn);
+    transform: rotate(1turn) scale(1.5);
   }
   75% {
-    transform: rotate(1.5turn);
+    transform: rotate(0turn) scale(1.5);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(0turn) scale(1);
   }
 }
 
 .matto {
-  animation: rotation 15s ease-in-out infinite;
+  position: absolute;
   &:hover {
-    animation: pause;
+    animation: rotation 2s ease-in-out infinite;
+
+    cursor: pointer;
   }
 }
