@@ -161,7 +161,7 @@ header nav {
   transition: 0.5s linear;
   padding: 2em;
 }
-header nav div p {
+header nav div div {
   font-size: 20px;
   font-weight: 900;
   font-family: Arial;
@@ -212,6 +212,30 @@ header nav ul li:hover {
 #hero div#orso img#orso2:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5turn);
+  }
+  50% {
+    transform: rotate(4turn);
+  }
+  75% {
+    transform: rotate(1.5turn);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.matto {
+  animation: rotation 15s ease-in-out infinite;
+}
+.matto:hover {
+  animation: pause;
 }
 
 #c-container {

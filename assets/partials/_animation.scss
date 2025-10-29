@@ -1,0 +1,24 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5turn);
+  }
+  50% {
+    transform: rotate(4turn);
+  }
+  75% {
+    transform: rotate(1.5turn);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.matto {
+  animation: rotation 15s ease-in-out infinite;
+  &:hover {
+    animation: pause;
+  }
+}
