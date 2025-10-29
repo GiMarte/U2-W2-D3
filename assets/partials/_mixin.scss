@@ -4,3 +4,25 @@
   align-items: center;
 }
 
+@mixin a-margin {
+  margin: 2em;
+}
+
+@mixin x-margin {
+  margin: 0 1em;
+}
+
+@mixin y-margin {
+  margin: 1em 0;
+}
+@mixin a-padding {
+  padding: 2em;
+}
+
+@mixin x-padding {
+  padding: 0 1em;
+}
+
+@mixin y-padding {
+  padding: 1em 0;
+}

@@ -1,0 +1,27 @@
+@mixin borders {
+  border: none;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+#hero {
+  button#uno {
+    background-color: $primary;
+  }
+  button#due {
+    background-color: $terziary;
+  }
+  button#tre {
+    background-color: $secondary;
+  }
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include borders;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3) rotate(0.5turn);
+      rotate: 366deg;
+    }
+  }
+}

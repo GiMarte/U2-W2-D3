@@ -1,11 +1,29 @@
-@use "./partials/reset";
+@import "./partials/reset";
 
-@use "./partials/colors";
+@import "./partials/colors";
 
-@use "./partials/buttons";
+@import "./partials/buttons";
 
-@use "./partials/fonts";
+@import "./partials/fonts";
 
-@use "./partials/mixin";
+@import "./partials/mixin";
 
-@use "./partials/header";
+@import "./partials/header";
+
+#c-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 100px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 15px;
+
+  &:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+}

@@ -1,1 +1,11 @@
-
+@mixin font($size: null, $weight: null, $family: null) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $family {
+    font-family: $family;
+  }
+}

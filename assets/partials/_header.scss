@@ -1,7 +1,60 @@
 header {
   nav {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s linear;
+    @include a-padding;
+    div {
+      p {
+        @include font(20px, 900, Arial);
+      }
+    }
     ul {
-      background-color: wheat;
+      display: flex;
+      justify-content: flex-end;
+      color: $text;
+      li {
+        @include x-margin;
+        &:hover {
+          color: $terziary;
+        }
+      }
+    }
+  }
+  color: $text;
+  background-color: $primary;
+}
+
+#hero {
+  @include center;
+  @include a-margin;
+  transition: 0.5s linear;
+  div {
+    @include x-margin;
+  }
+  div#carlo {
+    h1 {
+      @include font(50px, 900, Arial);
+      &:hover {
+        rotate: 2deg;
+      }
+    }
+  }
+  div#orso {
+    position: relative;
+    img#orso1 {
+      opacity: 0;
+    }
+    img#orso2 {
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      border-radius: 15px;
+      transition: 200ms ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
     }
   }
 }
